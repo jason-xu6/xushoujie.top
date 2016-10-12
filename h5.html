@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>徐守杰</title>
+	<link rel="shortcut icon" href="images/title.ico"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="script/jquery-2.2.3.js"></script>
+	<script src="script/jquery-ui.min.js"></script>
+	<script src="script/jquery.fullPage.min.js"></script>
+    <script src="js/h5.js"></script>
+    <link rel="stylesheet" href="css/h5.css">
+    <script src="js/h5ComponentBase.js"></script>
+    <link rel="stylesheet" href="css/h5ComponentBase.css">
+    <script src="js/h5ComponentPoint.js"></script>
+    <script src="js/h5ComponentBar.js"></script>
+    <script src="js/h5ComponentPolyline.js"></script>
+    <script src="js/h5ComponentRadar.js"></script>
+</head>
+<body>
+	
+
+
+	<script>
+		$(document).ready(function()
+			{
+
+              
+		//添加页和添加组件的h5部分
+				var wd=document.body.clientWidth;
+				var h5=new H5();
+
+				h5
+				.addPage("one","images/one-bg.png")
+					.addComponent("logo",
+						{text:"徐守杰",
+						width:400,
+						height:116,
+						css:{
+							top:-58,
+						},
+						animateIn:{opacity:1,top:100},
+						animateOut:{opacity:0,top:-58},
+			
+						center:true
+						})
+					.addComponent("web",
+						{text:"web前端开发",
+						width:400,
+						height:116,
+						css:{
+							top:180,
+							left:-200,
+						},
+						animateIn:{opacity:1,left:(wd-200)/2},
+						animateOut:{opacity:0,left:-200},
+						})
+					.addComponent("one-left-img",
+						{
+						width:370,
+						height:493,
+						css:{
+							bottom:-50,
+							left:-50,
+							opacity:0,
+						},
+						bg:"images/face_img_left.png",
+						animateIn:{opacity:1,bottom:0,
+							left:0,},
+						animateOut:{opacity:0,bottom:-50,
+							left:-50,},
+						})
+					.addComponent("one-right-img",
+						{
+						width:370,
+						height:493,
+						css:{
+							bottom:-50,
+							right:-50,
+							opacity:0,
+						},
+						bg:"images/face_img_right.png",
+						animateIn:{opacity:1,bottom:0,
+							right:0,},
+						animateOut:{opacity:0,bottom:-50,
+							right:-50,},
+						})
+				.addPage("two","images/page-bg.png")
+					.addComponent("caption",{
+						text:"个人描述",
+						width:566,
+						height:320,
+						css:{
+						top:0,
+						left:0,
+						opacity:0,},
+						bg:"images/caption-bg.png",
+						animateIn:{opacity:1},
+						animateOut:{opacity:0},
+						})
+					.addComponent("school",{
+						text:"中南民族大学 软件工程",
+						width:640,
+						height:100,
+						css:{
+						top:"10%",
+						opacity:0,},
+						animateIn:{opacity:1,top:'20%'},
+						animateOut:{opacity:0,top:"10%"},
+						delay:500,
+						center:true,
+						})
+					.addComponent("description",{
+						text:"大学期间一直当任班长，组织过多次班级活动，是学校小少民族骨干班成员，我是一个对新鲜事物很感兴趣的一个人，自学能力强，喜欢网页制作，喜欢编程。",
+						width:269*2,
+						height:176*2,
+						css:{
+						top:'40%',
+						opacity:0,},
+						bg:"images/description-bg.gif",
+						animateIn:{opacity:1,top:"30%",},
+						animateOut:{opacity:0,top:'40%',},
+						center:true,
+						delay:1500,
+						})
+					.addComponent("people",{
+						width:516,
+						height:306,
+						css:{
+						bottom:-50,
+						opacity:0,},
+						bg:"images/people.png",
+						animateIn:{opacity:1,bottom:0,},
+						animateOut:{opacity:0,bottom:-50,},
+						center:true,
+						delay:1000,
+						})
+
+				.addPage("three","images/page-bg.png")
+					.addComponent("caption",{
+							text:"专业技能",
+							width:566,
+							height:320,
+							css:{
+							top:0,
+							left:0,
+							opacity:0,},
+							bg:"images/caption-bg.png",
+							animateIn:{opacity:1},
+							animateOut:{opacity:0},
+							})
+				.addPage("four","images/page-bg.png")
+						.addComponent("caption",{
+							text:"专业技能",
+							width:566,
+							height:320,
+							css:{
+							top:0,
+							left:0,
+							opacity:0,},
+							bg:"images/caption-bg.png",
+							animateIn:{opacity:1},
+							animateOut:{opacity:0},
+							})
+				.addPage("five","images/page-bg.png")
+					.addComponent("caption",{
+							text:"专业技能",
+							width:566,
+							height:320,
+							css:{
+							top:0,
+							left:0,
+							opacity:0,},
+							bg:"images/caption-bg.png",
+							animateIn:{opacity:1},
+							animateOut:{opacity:0},
+							})
+				.addPage("six","images/page-bg.png")
+						.addComponent("caption",{
+							text:"专业技能",
+							width:566,
+							height:320,
+							css:{
+							top:0,
+							left:0,
+							opacity:0,},
+							bg:"images/caption-bg.png",
+							animateIn:{opacity:1},
+							animateOut:{opacity:0},
+							})
+				.addPage("seven","images/page-bg.png")
+					.addComponent("caption",{
+							text:"专业技能",
+							width:566,
+							height:320,
+							css:{
+							top:0,
+							left:0,
+							opacity:0,},
+							bg:"images/caption-bg.png",
+							animateIn:{opacity:1},
+							animateOut:{opacity:0},
+							})
+				.addPage("eight","images/page-bg.png")
+					.addComponent("goTop",{
+						text:"∧",
+						width:200,
+						height:100,
+						css:{
+							opacity:0,
+						    top:20},
+						animateIn:{opacity:1},
+						animateOut:{opacity:0},
+						center:true
+						})
+					.addComponent("lastName1",{
+						text:"Thank ",
+						width:600,
+						height:250,
+						marginLeft:-150,
+						css:{
+						marginLeft:-150,
+							opacity:0,
+							left:"30%",
+						    top:250},
+						animateIn:{opacity:1,left:"50%"},
+						animateOut:{opacity:0,left:"30%"},
+						})
+					.addComponent("lastName2",{
+						text:"you",
+						width:600,
+						height:250,
+						css:{
+						marginRight:-150,
+							opacity:0,
+							right:"30%",
+						    top:250},
+						animateIn:{opacity:1,right:"50%"},
+						animateOut:{opacity:0,right:"30%"},
+						});
+					});
+
+         
+
+       //散点图部分
+           $(document).ready(function()
+           	{
+           		
+             var cfg={
+                    type:"point",
+                    width:300,
+                    height:300,
+					css:{
+						// opacity:0,
+						top:"45%"
+					},
+					data:[
+                    ["html/css",.8,"#FF7676"],
+                    ["js",.6,"#FFA3A4",0,"-80%"],
+                    ["jquery",.6,"#99C1FF",0,"110%"]
+					],
+					// animateIn:{opacity:1},
+					// animateOut:{opacity:0},
+		            delay:500,
+					center:true
+				};
+				var Point=new h5ComponentPoint("Point",cfg);
+				$(".h5_page_seven").append(Point);
+
+				
+           	});
+				
+				
+             //柱状图部分
+            $(document).ready(function()
+            	{
+
+            		var cfg={
+            			type:"bar",
+            			image:"horizontal",
+            			css:{
+						width:300,
+						height:200,
+						top:"20%",
+						left:"50%",
+						opacity:0,
+						marginLeft:-150,
+					},
+					data:[
+                    ["javascript",.6,"#FF7676"],
+                    ["jquery",.54],
+                    ["html/css",.63],
+                    ["html5",.40],
+                    ["css3",.50]
+					],
+					animateIn:{top:"40%",opacity:1},
+					animateOut:{top:"20%",opacity:0},
+					delay:500
+            		};
+            		var cfg2={
+            			type:"bar",
+            			image:"vertical",
+            			css:{
+						width:350,
+						height:200,
+						top:"60%",
+						left:"50%",
+						opacity:0,
+						marginLeft:-175,
+					},
+					data:[
+                    ["js",.6,"#FF7676"],
+                    ["jquery",.54],
+                    ["html/css",.73],
+                    ["html5",.40],
+                    ["css3",.50]
+					],
+					animateIn:{top:"40%",opacity:1},
+					animateOut:{top:"60%",opacity:0},
+					delay:500,
+            		};
+            		var bar2=new h5ComponentBar("bar2",cfg2);
+            		var bar=new h5ComponentBar("bar",cfg);
+            		$(".h5_page_four").append(bar2);
+            		$(".h5_page_three").append(bar);
+            	});
+
+               //折线图部分
+               jQuery(document).ready(function() {
+            		var cfg={
+            			type:"polyline",
+						width:600,
+						height:460,
+            			css:{
+						top:"20%",
+						left:"50%",
+						opacity:0,
+						marginLeft:-150,
+					},
+					data:[
+                    ["javascript",.6,"#FF7676"],
+                    ["jquery",.54],
+                    ["html/css",.73,"#FF7676"],
+                    ["html5",.40],
+                    ["css3",.50]
+					],
+					animateIn:{top:"40%",opacity:1},
+					animateOut:{top:"20%",opacity:0},
+					delay:500,
+            		};
+
+               	var polyline=new h5ComponentPolyline(name,cfg);
+                 $(".h5_page_five").append(polyline);
+                  
+
+               });
+               
+
+               //这里就是传说中的雷达图
+               jQuery(document).ready(function($) {
+
+               	var cfg={
+            			type:"Radar",
+						width:560,
+						height:560,
+            			css:{
+						top:"60%",
+						left:"50%",
+						opacity:0,
+						marginLeft:-140,
+					},
+					data:[
+                    ["javascript",.6,"#FF7676"],
+                    ["jquery",.54],
+                    ["html/css",.73],
+                    ["html5",.40],
+                    ["css3",.50]
+					],
+					animateIn:{top:"30%",opacity:1},
+					animateOut:{top:"60%",opacity:0},
+					delay:500,
+            		};
+
+               	var radar=new h5ComponentRadar(name,cfg);
+               	$(".h5_page_six").append(radar);
+               });
+
+
+
+              //fullpage部分y
+              $(document).ready(function()
+              	{
+              		$(".h5").fullpage(
+                        {
+                        	onLeave:function(index,nextIndex,direction)
+    					{
+                            $(this).find('.h5Component').trigger("onLeave");
+    					},
+    					
+    					    afterLoad:function(anchorLink,index)
+    					{
+    						$(this).find('.h5Component').trigger("afterLoad");
+    					}}
+
+					);
+              	});
+	</script>
+</body>
+<script>
+	jQuery(document).ready(function($) {
+		$(".h5ComponentNamegoTop").click(function()
+			{
+				$.fn.fullpage.moveTo(1);
+			});
+	});
+</script>
+</html>
